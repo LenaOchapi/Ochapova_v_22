@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <Switch
+        android:id="@+id/SwitchSet1"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:text="Принимать входящие звонки на деловой номер"
+        app:layout_constraintBottom_toTopOf="@+id/SwitchSet2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <Switch
+        android:id="@+id/SwitchSet2"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="Включить режим «Не беспокоить»"
+        app:layout_constraintBottom_toTopOf="@+id/SwitchSet3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/SwitchSet3"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="424dp"
+        android:text="Включить автопродление тарифа"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/resetButton"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:background="@drawable/signin_btn"
+        android:text="Сброс всех настроек"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:onClick="onClickGoBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/frame4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
